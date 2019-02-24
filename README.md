@@ -1,4 +1,4 @@
-# Verilog - Microprocessor 8805
+# Verilog
 
 ### To run a verilog program
 * Compile: `iverilog <file_name>`
