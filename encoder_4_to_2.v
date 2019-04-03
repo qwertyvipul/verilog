@@ -1,4 +1,4 @@
-module decoder_4_to_2(in, out);
+module encoder_4_to_2(in, out);
     input[3:0] in;
     output[1:0] out;
     reg[1:0] out;
@@ -16,9 +16,9 @@ endmodule
 module test;
     reg[3:0] in;
     wire[1:0] out;
-    decoder_4_to_2(in, out);
+    encoder_4_to_2(in, out);
     initial begin
-        $dumpfile("decoder-4-to-2.vcd");
+        $dumpfile("encoder-4-to-2.vcd");
         $dumpvars(0, test);
         $display("input\toutput")
         $monitor("%b\t%b", in, out);
